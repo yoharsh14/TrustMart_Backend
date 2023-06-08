@@ -1,6 +1,6 @@
 const { network } = require("hardhat");
 const developmentChains = ["localhost", "hardhat"];
-const { verify } = require("../utils/verify");
+const  verify  = require("../utils/verify");
 module.exports = async ({ getNamedAccounts, deployments }) => {
   const { deployer } = await getNamedAccounts();
   const { deploy, log } = deployments;
@@ -13,7 +13,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
   });
   if (!developmentChains.includes(network.name)) {
     log("Verifying...");
-    verify(nftMarketplace.address, []);
+   await verify(nftMarketplace.address, []);
   }
   log();
 };
