@@ -119,27 +119,27 @@
     },
     {
       "id": 14,
-      "name": "Nike Jordans",
+      "name": "Shoes",
       "category": "footware",
-      "image": "https://ipfs.io/ipfs/QmQouTxRYQRnp72H9Ro9FQhbUrv81ZMf6gjkZ12tvrgPzp?filename=nikejordans.webp",
+      "image": "https://ipfs.io/ipfs/QmZZctDEuBCQNjTvgiQsdDDnSBcXWVjGaJzEcHaaCtJD77?filename=15f901c90a9549d29104aae700d27efb_9366.webp",
       "price": "0.000015",
       "rating": 3,
       "stock": 12
     },
     {
       "id": 15,
-      "name": "Adidas",
+      "name": "Shoes",
       "category": "footware",
-      "image": "https://ipfs.io/ipfs/QmNMsyQdxV7BGwsNKX7EsFvmj5ZQ3r5mGRdShu4MjUAFEt?filename=585e2cd2-4f2a-408c-a8ba-f89952cdf332.webp",
+      "image": "https://ipfs.io/ipfs/QmeRPAz9tuv2Hy4Y3xRS93Mzg7cu1Qvj8a5vWBauwfx53E?filename=585e2cd2-4f2a-408c-a8ba-f89952cdf332.webp",
       "price": "0.000015",
       "rating": 3,
       "stock": 12
     },
     {
       "id": 16,
-      "name": "gucci",
+      "name": "Shoes",
       "category": "footware",
-      "image": "https://ipfs.io/ipfs/QmeKkrH7k5w6o3Pf8Lw3oTqYpGuB2fo4HTnmiShyswSi7H?filename=bf34e3cf2ea74279ad3cae890002d5e3_9366.webp",
+      "image": "https://ipfs.io/ipfs/QmZq7BPxKfK6aukgvvCCw8LC9pFspSvDJdqWCtzXMiaKAV?filename=bf34e3cf2ea74279ad3cae890002d5e3_9366.webp",
       "price": "0.000015",
       "rating": 3,
       "stock": 12

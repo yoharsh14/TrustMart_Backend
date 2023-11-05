@@ -8,18 +8,14 @@ require("dotenv").config();
 /** @type import('hardhat/config').HardhatUserConfig */
 const RPC_URL_GOERLI = process.env.RPC_URL_GOERLI || "key";
 const RPC_URL_SEPOLIA = process.env.RPC_URL_SEPOLIA || "key";
+const RPC_URL_POLYGON = process.env.RPC_URL_POLYGON || "key";
 const PRIVATE_KEY = process.env.PRIVATE_KEY || "key";
 const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY || "key";
+const POLYGONSCAN_API_KEY = process.env.POLYGONSCAN_API_KEY || "Key";
 const CMC_API_KEY = process.env.CMC_API_KEY || "key";
 module.exports = {
   solidity: {
-    compilers: [
-      { version: "0.8.17" },
-      { version: "0.6.0" },
-      { version: "0.6.6" },
-      { version: "0.6.121" },
-      { version: "0.4.19" },
-    ],
+    compilers: [{ version: "0.8.17" }],
   },
   defaultNetwork: "hardhat",
   networks: {
@@ -37,11 +33,19 @@ module.exports = {
       blockConfirmations: 6,
       timeout: 500000,
     },
+    polygonMumbai: {
+      url: RPC_URL_POLYGON,
+      accounts: [PRIVATE_KEY],
+      chainId: 80001,
+      blockConfirmations: 6,
+      timeout: 500000,
+    },
   },
   etherscan: {
     apiKey: {
       goerli: ETHERSCAN_API_KEY,
       sepolia: ETHERSCAN_API_KEY,
+      polygonMumbai: POLYGONSCAN_API_KEY,
     },
   },
   gasReporter: {

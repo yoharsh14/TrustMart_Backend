@@ -144,7 +144,7 @@ const developmentChains = ["localhost", "hardhat"];
           expect(parseInt(currentBalance)).to.be.lessThan(parseInt(newBlance));
         });
         it("Buy event emitted", async () => {
-          expect(transaction).to.emit(contract, "Buy");
+          expect(transaction).to.emit(contract, "Buy")
         });
         it("Balance of the seller is increased", async () => {
           const latestBalance = await contract.addressToAmount(
